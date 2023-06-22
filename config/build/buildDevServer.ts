@@ -5,7 +5,8 @@ const buildDevServer = ({ port }:BuildOptions):DevServerConfig => {
 	return {
 		port,
     open: true,
-		historyApiFallback: true
+		historyApiFallback: true,
+		hot: true
 	}
 }
 
