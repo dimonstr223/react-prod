@@ -2,9 +2,9 @@ import { WebpackPluginInstance, ProgressPlugin, DefinePlugin, HotModuleReplaceme
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin'
 
 import HtmlWebpackPlugin from 'html-webpack-plugin'
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 
-import { BuildOptions } from './types/config';
+import { BuildOptions } from './types/config'
 
 
 const buildPlugins = ({ paths, isDev }:BuildOptions):WebpackPluginInstance[] => {
