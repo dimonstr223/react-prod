@@ -6,7 +6,8 @@ module.exports = {
 	'extends': [
 		'eslint:recommended',
 		'plugin:@typescript-eslint/recommended',
-		'plugin:react/recommended'
+		'plugin:react/recommended',
+		'plugin:i18next/recommended'
 	],
 	'overrides': [
 		{
@@ -28,7 +29,8 @@ module.exports = {
 	},
 	'plugins': [
 		'@typescript-eslint',
-		'react'
+		'react',
+		'i18next'
 	],
 	'rules': {
 		'indent': ['error','tab'],
@@ -46,6 +48,10 @@ module.exports = {
 		'import/extentions': 'off',
 		'@typescript-eslint/ban-ts-comment': 'warn',
 		'import/no-extraneous-dependencies': 'off',
-		'no-underscore-dangle': 'off'
+		'no-underscore-dangle': 'off',
+		'i18next/no-literal-string': ['error', { markupOnly: true }]
+	},
+	globals: {
+		__IS_DEV__: true,
 	}
 }
