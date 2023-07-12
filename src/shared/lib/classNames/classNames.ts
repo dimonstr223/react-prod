@@ -4,8 +4,8 @@ export const classNames = (cls: string, mods: Mods = {}, additional: string[] = 
 	return [
 		cls,
 		...additional.filter(Boolean),
-		Object.entries(mods)
+		...Object.entries(mods)
 			.filter(([_, value]) => Boolean(value))
-			.map(([className]) => className).join(' ')
+			.map(([className]) => className),
 	].join(' ')
 }
