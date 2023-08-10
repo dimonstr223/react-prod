@@ -5,7 +5,7 @@ import { AppRouter } from 'app/providers/router'
 import { Navbar } from 'widgets/Navbar'
 
 import './styles/index.scss'
-import { Sidebar} from 'widgets/Sidebar'
+import { Sidebar } from 'widgets/Sidebar'
 import { Suspense } from 'react'
 
 const App = () => {
